@@ -15,16 +15,16 @@ class SecondPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Spacer(),
+              const Spacer(),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  MyButton(icon: Icons.ad_units),
+                  MyButton(icon: Icons.description),
                   MyImage(h: 150, w: 150),
-                  MyButton(icon: Icons.menu),
+                  MyButton(icon: Icons.more_horiz),
                 ],
               ),
-              Spacer(),
+              const Spacer(),
               const Song(str2: 'Holix', str1: 'Flume'),
               const SizedBox(height: 10),
               const Song(str2: 'Never Be Like You', str1: 'Flume x Kia'),
@@ -62,9 +62,12 @@ class SecondPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  const MyButton(icon: Icons.fast_rewind),
+                  const MyButton(
+                    icon: Icons.fast_rewind,
+                    p: 24,
+                  ),
                   Container(
-                    padding: const EdgeInsets.all(16),
+                    padding: const EdgeInsets.all(24),
                     decoration: const BoxDecoration(boxShadow: [
                       BoxShadow(
                         blurRadius: 20,
@@ -83,7 +86,10 @@ class SecondPage extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
-                  const MyButton(icon: Icons.fast_forward)
+                  const MyButton(
+                    icon: Icons.fast_forward,
+                    p: 24,
+                  )
                 ],
               ),
               const SizedBox(height: 40)

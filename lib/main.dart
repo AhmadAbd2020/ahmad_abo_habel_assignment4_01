@@ -69,9 +69,12 @@ class _HomePageState extends State<HomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  const MyButton(icon: Icons.fast_rewind),
+                  const MyButton(
+                    icon: Icons.fast_rewind,
+                    p: 24,
+                  ),
                   Container(
-                    padding: const EdgeInsets.all(16),
+                    padding: const EdgeInsets.all(24),
                     decoration: const BoxDecoration(boxShadow: [
                       BoxShadow(
                         blurRadius: 20,
@@ -90,7 +93,10 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.white,
                     ),
                   ),
-                  const MyButton(icon: Icons.fast_forward)
+                  const MyButton(
+                    icon: Icons.fast_forward,
+                    p: 24,
+                  )
                 ],
               ),
               const SizedBox(height: 40)
